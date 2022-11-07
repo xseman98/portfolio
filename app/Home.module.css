@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90vw;
+}
+
+.introducer {
+  display: flex;
+  min-height: 100vh;
+  flex: 1;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.picture {
+  width: 402px;
+  height: 462px;
+  transition: width .5s ease, height .5s ease;
+}
+
+.picture:hover {
+  width: 603px;
+  height: 688px;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: #3c6454;
+}
+
+.description {
+  margin: 1rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: #a17a51;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 2rem .5rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: color 0.15s ease, scale .5s ease, background-color 1s ease, min-height 1s ease;
+  width: 300px;
+  min-height: 200px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #3c6454 !important;
+  border: none !important;
+  background: rgba(60, 100, 84, .25) !important;
+  scale: 1.025;
+  min-height: 400px;
+}
+
+.card h2 {
+  color: #3c6454;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #c6c0b3;
+  transition: color 1s ease;
+}
+
+.card:hover p {
+  color: #3c6454;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    width: 100%;
+    flex-direction: column;
+  }
+}
