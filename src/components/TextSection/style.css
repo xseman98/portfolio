@@ -1,0 +1,40 @@
+section.text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    color: #57371e;
+    font-style: italic;
+}
+
+section.text.main {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+section.text.sub {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+section.text a:hover {
+    color: #3c6454;
+}
+
+.animateTextSection {
+    animation-duration: 2s;
+    animation-name: animate-text;
+}
+  
+@keyframes animate-text {
+    0%   { 
+      opacity: 0;
+      transform : translateX(-5rem)
+    }
+    100% { 
+      opacity: 1;
+      transform : translateX(0rem)
+    }
+}

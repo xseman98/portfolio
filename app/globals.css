@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   background: #ddd6c7;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -15,55 +15,16 @@ main {
   align-items: center;
 }
 
-footer {
-  display: flex;
-  height: 50vh;
-  flex: 1;
-  gap: 2rem;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  background: #3c6454;
-  transition: background-color .5s ease;
+h1 {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: #3c6454;
 }
 
-footer section {
-  min-width: 100vw;
-  display: flex;
-  flex: 0;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: row;
-}
-
-footer a {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-grow: 1;
-  color: #f1f1f1;
-  transition: color .5s ease;
-}
-
-footer a:hover {
-  color: #a17a51 !important;
-}
-
-footer p {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-grow: 1;
-  color: black;
-  line-height: .75;
-  font-size: .75rem;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+.description {
+  margin: 1rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: #57371e;
 }

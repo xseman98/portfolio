@@ -1,0 +1,69 @@
+footer {
+  display: flex;
+  height: 50vh;
+  margin-top: 20rem;
+  flex: 1;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: #3c6454;
+  transition: background-color .5s ease;
+}
+  
+footer section {
+  min-width: 100vw;
+  display: flex;
+  flex: 0;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+}
+  
+footer a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  color: #f1f1f1;
+  transition: color .5s ease;
+}
+  
+footer a:hover {
+  color: #a17a51 !important;
+}
+  
+footer p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  color: black;
+  line-height: .75;
+  font-size: .75rem;
+}
+  
+a {
+  color: inherit;
+  text-decoration: none;
+}
+  
+* {
+  box-sizing: border-box;
+}
+
+.animateFooter {
+  animation-duration: 2s;
+  animation-name: animate-footer;
+}
+  
+@keyframes animate-footer {
+  0% { 
+    opacity: 0;
+    transform : translateY(2rem)
+  }
+  100% { 
+    opacity: 1;
+    transform : translateY(0rem)
+  }
+}
