@@ -1,3 +1,7 @@
+'use client'
+
+import Footer from '../src/components/Footer'
+import HeadTitle from '../src/components/HeadTitle'
 import './globals.css';
 
 export default function RootLayout({
@@ -7,30 +11,15 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head>
-        <title>Kristián Seman | Portfolio</title>
-        <meta name="description" content="Kristian Seman portfolio website" />
-        <link rel="icon" href="/profile.png" />
-      </head>
+      <HeadTitle 
+        title='Kristián Seman | Portfolio'
+        description='Landing page of Kristian Seman portfolio website.' 
+      />
       <body>
         <main>
           {children}
         </main>
-        <footer>
-          <section>
-            <div>
-              <p>Socials</p>
-              <a href="/">...</a>
-            </div>
-            <div>
-              <p>Phone</p>
-              <a href="/">+420 774 968 728</a>
-              <p>Email</p>
-              <a href="/">seman.kris@gmail.com</a>
-            </div>
-          </section>
-          <img src="/signature.png" alt="Signature" width={72} height={16} />
-        </footer>
+        <Footer />
       </body>
     </html>
   )
