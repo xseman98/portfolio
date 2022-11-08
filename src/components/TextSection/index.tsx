@@ -4,7 +4,7 @@ import './style.css'
 
 interface TextSectionProps {
     sectionType: 'main' | 'sub',
-    children
+    children: any
 }
 
 const TextSection: React.FC<TextSectionProps> = (props) => {
